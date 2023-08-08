@@ -55,18 +55,28 @@
 
      <section class="carrossel">
         <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+   <div class="swiper-pagination"></div>
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">Slide 1</div>
+     <div class="swiper-slide">Slide 2</div>
+     <div class="swiper-slide">Slide 3</div>
+     ...
+   </div>
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-button-next"></div>
+ </div>
      </section>
+     
      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
          <script>
-            const swiper = new Swiper('.swiper', {
-                spaceBetween: 10,
-            });
-         </script>
-
-         <script>
-            const swiper = new Swiper('.swiper', {
-                slidesPerView: 3,
-                spaceBetween: 10,
+            const swiper = new Swiper('.swiper',
+                slidesPerView; 3,
+                spaceBetween; 10,
+                pagination; {
+              el: '.swiper-pagination',
+              type: 'bullets',
             });
          </script>
 
